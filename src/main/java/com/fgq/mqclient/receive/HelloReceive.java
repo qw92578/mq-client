@@ -15,6 +15,6 @@ public class HelloReceive {
 
     @RabbitListener(queues="test-queue")    //监听器监听指定的Queue
     public void processC(String str) {
-        System.out.println("Receive-message:"+str);
+        System.err.println("Receive-message:"+str);
     }
 }
